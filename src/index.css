@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================================
+   MIDNIGHT FLORAL LAVENDER - CORE TOKENS & SYSTEM STYLES
+   ========================================================================== */
+
+:root {
+  --bg-primary: #09070F;
+  --bg-secondary: #120D1C;
+  --card-surface: #171521;
+  --lavender: #B69AE8;
+  --soft-violet: #9270C5;
+  --deep-purple: #70449A;
+  --gold: #C6A45C;
+  --white: #F5F1FA;
+  --muted: #B5AABD;
+
+  --border-subtle: rgba(182, 154, 232, 0.12);
+  --border-hover: rgba(198, 164, 92, 0.38);
+  --border-active: rgba(182, 154, 232, 0.5);
+
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Space Grotesk", "Plus Jakarta Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #09070F;
+  color: #F5F1FA;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  background: #09070F;
+  color: #F5F1FA;
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+/* Custom Botanical Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #09070F;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(182, 154, 232, 0.35);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(198, 164, 92, 0.65);
+}
+
+/* Text Selection */
+::selection {
+  background: rgba(182, 154, 232, 0.3);
+  color: #F5F1FA;
+}
+
+/* Accessible focus ring */
+:focus-visible {
+  outline: 2px solid #C6A45C;
+  outline-offset: 3px;
+}
+
+/* Glassmorphism Surface */
+.glass-panel {
+  background: rgba(23, 21, 33, 0.78);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--border-subtle);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel:hover {
+  border-color: var(--border-hover);
+  box-shadow: 0 10px 30px -10px rgba(9, 7, 15, 0.9), 0 0 25px -5px rgba(182, 154, 232, 0.15);
+}
+
+/* Gold Gradient Shimmer text */
+.text-shimmer-gold {
+  background: linear-gradient(135deg, #F5F1FA 20%, #E2CB96 60%, #C6A45C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Lavender Gradient text */
+.text-shimmer-lavender {
+  background: linear-gradient(135deg, #F5F1FA 10%, #D3C2F3 50%, #B69AE8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

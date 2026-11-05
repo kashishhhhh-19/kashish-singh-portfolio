@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Radial Ambient Lavender Glow behind flower -->
+    <radialGradient id="lilyAmbientGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7153A5" stop-opacity="0.35" />
+      <stop offset="50%" stop-color="#B9A0E8" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#B9A0E8" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Translucent Velvet Petal Gradients -->
+    <linearGradient id="petalTop" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="40%" stop-color="#F5F2FA" />
+      <stop offset="80%" stop-color="#E2D9F3" />
+      <stop offset="100%" stop-color="#B8A3DC" />
+    </linearGradient>
+
+    <linearGradient id="petalShadow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EDE6F7" />
+      <stop offset="50%" stop-color="#D5C5ED" />
+      <stop offset="100%" stop-color="#6F529E" stop-opacity="0.6" />
+    </linearGradient>
+
+    <linearGradient id="petalHighlight" x1="30%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#FAF8FD" />
+      <stop offset="100%" stop-color="#D8CBF0" />
+    </linearGradient>
+
+    <!-- Pistil & Golden Stamen Gradients -->
+    <linearGradient id="stamenStem" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#7E9671" />
+      <stop offset="70%" stop-color="#CFE0C3" />
+      <stop offset="100%" stop-color="#FDFBF7" />
+    </linearGradient>
+
+    <linearGradient id="goldAnther" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF2B2" />
+      <stop offset="45%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#8C6E14" />
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Backdrop Glow -->
+  <circle cx="200" cy="200" r="190" fill="url(#lilyAmbientGlow)" />
+
+  <g transform="translate(0, 0)">
+    <!-- BACK PETALS (Layer 1 - deep purple/lavender rim for depth) -->
+    <!-- Top Back Petal -->
+    <path d="M200 195 C185 140 170 80 195 25 C210 20 220 50 215 110 C210 150 205 185 200 195 Z" 
+          fill="url(#petalShadow)" opacity="0.85" />
+    
+    <!-- Left Back Petal -->
+    <path d="M195 200 C140 175 75 145 25 160 C25 180 65 205 125 210 C160 212 190 205 195 200 Z" 
+          fill="url(#petalShadow)" opacity="0.8" />
+
+    <!-- Right Back Petal -->
+    <path d="M205 198 C255 170 325 140 375 155 C375 175 335 205 275 212 C240 215 210 205 205 198 Z" 
+          fill="url(#petalShadow)" opacity="0.8" />
+
+    <!-- MID PETALS (Layer 2 - Pearlescent white with subtle central vein) -->
+    <!-- Bottom Left Petal -->
+    <path d="M198 205 C160 245 110 305 75 360 C95 375 135 345 175 290 C200 255 202 215 198 205 Z" 
+          fill="url(#petalHighlight)" opacity="0.95" />
+    <path d="M198 205 Q145 275 75 360" stroke="#B8A3DC" stroke-width="1.2" fill="none" opacity="0.5" />
+
+    <!-- Bottom Right Petal -->
+    <path d="M202 205 C240 245 290 305 325 360 C305 375 265 345 225 290 C200 255 198 215 202 205 Z" 
+          fill="url(#petalHighlight)" opacity="0.95" />
+    <path d="M202 205 Q255 275 325 360" stroke="#B8A3DC" stroke-width="1.2" fill="none" opacity="0.5" />
+
+    <!-- FOREGROUND PETALS (Layer 3 - Crisp luminous white & lavender contour) -->
+    <!-- Center-Top Cresting Petal -->
+    <path d="M200 205 C180 150 160 85 190 35 C205 30 225 45 220 100 C215 145 210 185 200 205 Z" 
+          fill="url(#petalTop)" />
+    <path d="M200 205 Q195 120 190 35" stroke="#D8C8F3" stroke-width="1.5" fill="none" opacity="0.7" />
+
+    <!-- Wide Flaring Left Petal -->
+    <path d="M200 205 C155 185 85 165 40 185 C45 205 90 225 150 220 C180 216 195 210 200 205 Z" 
+          fill="url(#petalHighlight)" />
+    <path d="M200 205 Q120 195 40 185" stroke="#D8C8F3" stroke-width="1.4" fill="none" opacity="0.6" />
+
+    <!-- Wide Flaring Right Petal -->
+    <path d="M200 205 C245 185 315 165 360 185 C355 205 310 225 250 220 C220 216 205 210 200 205 Z" 
+          fill="url(#petalHighlight)" />
+    <path d="M200 205 Q280 195 360 185" stroke="#D8C8F3" stroke-width="1.4" fill="none" opacity="0.6" />
+
+    <!-- BOTANICAL CENTER: Green Throat, Filaments and Golden Pollen Anthers -->
+    <!-- Throat Glow -->
+    <ellipse cx="200" cy="205" rx="14" ry="12" fill="#9FB890" opacity="0.8" />
+    <ellipse cx="200" cy="205" rx="8" ry="7" fill="#5F804E" opacity="0.7" />
+
+    <!-- Stamen Filaments -->
+    <!-- Stamen 1 (Up-Left) -->
+    <path d="M198 205 Q180 170 165 140" stroke="url(#stamenStem)" stroke-width="2" fill="none" stroke-linecap="round" />
+    <!-- Anther 1 (Gold) -->
+    <ellipse cx="163" cy="138" rx="7" ry="3.5" transform="rotate(-30 163 138)" fill="url(#goldAnther)" filter="drop-shadow(0 0 2px rgba(212,175,55,0.8))" />
+
+    <!-- Stamen 2 (Up-Right) -->
+    <path d="M202 205 Q220 170 235 140" stroke="url(#stamenStem)" stroke-width="2" fill="none" stroke-linecap="round" />
+    <!-- Anther 2 (Gold) -->
+    <ellipse cx="237" cy="138" rx="7" ry="3.5" transform="rotate(30 237 138)" fill="url(#goldAnther)" filter="drop-shadow(0 0 2px rgba(212,175,55,0.8))" />
+
+    <!-- Stamen 3 (Far Left) -->
+    <path d="M197 206 Q165 195 135 190" stroke="url(#stamenStem)" stroke-width="2" fill="none" stroke-linecap="round" />
+    <!-- Anther 3 (Gold) -->
+    <ellipse cx="132" cy="189" rx="6.5" ry="3" transform="rotate(10 132 189)" fill="url(#goldAnther)" filter="drop-shadow(0 0 2px rgba(212,175,55,0.8))" />
+
+    <!-- Stamen 4 (Far Right) -->
+    <path d="M203 206 Q235 195 265 190" stroke="url(#stamenStem)" stroke-width="2" fill="none" stroke-linecap="round" />
+    <!-- Anther 4 (Gold) -->
+    <ellipse cx="268" cy="189" rx="6.5" ry="3" transform="rotate(-10 268 189)" fill="url(#goldAnther)" filter="drop-shadow(0 0 2px rgba(212,175,55,0.8))" />
+
+    <!-- Stamen 5 (Down Center) -->
+    <path d="M200 207 Q196 235 192 255" stroke="url(#stamenStem)" stroke-width="2" fill="none" stroke-linecap="round" />
+    <!-- Anther 5 (Gold) -->
+    <ellipse cx="191" cy="257" rx="7" ry="3.5" transform="rotate(75 191 257)" fill="url(#goldAnther)" filter="drop-shadow(0 0 2px rgba(212,175,55,0.8))" />
+
+    <!-- Central Pistil / Stigma -->
+    <path d="M200 205 Q205 180 206 150" stroke="#A9C79A" stroke-width="3" fill="none" stroke-linecap="round" />
+    <circle cx="206" cy="148" r="4" fill="#CDE2C2" stroke="#688C56" stroke-width="1" />
+  </g>
+</svg>

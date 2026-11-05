@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="lavenderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D3C2F3" />
+      <stop offset="50%" stop-color="#B69AE8" />
+      <stop offset="100%" stop-color="#70449A" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2CB96" />
+      <stop offset="100%" stop-color="#C6A45C" />
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="48" fill="#09070F" stroke="url(#goldGrad)" stroke-width="2"/>
+  <!-- Lavender stalk -->
+  <path d="M50 82 Q48 55 50 20" stroke="#70449A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Lavender blossoms -->
+  <ellipse cx="46" cy="24" rx="4.5" ry="3" fill="url(#lavenderGrad)" transform="rotate(-20 46 24)"/>
+  <ellipse cx="54" cy="24" rx="4.5" ry="3" fill="url(#lavenderGrad)" transform="rotate(20 54 24)"/>
+  <ellipse cx="45" cy="32" rx="5" ry="3.5" fill="url(#lavenderGrad)" transform="rotate(-25 45 32)"/>
+  <ellipse cx="55" cy="32" rx="5" ry="3.5" fill="url(#lavenderGrad)" transform="rotate(25 55 32)"/>
+  <ellipse cx="44" cy="40" rx="5.5" ry="4" fill="url(#lavenderGrad)" transform="rotate(-30 44 40)"/>
+  <ellipse cx="56" cy="40" rx="5.5" ry="4" fill="url(#lavenderGrad)" transform="rotate(30 56 40)"/>
+  <ellipse cx="45" cy="48" rx="5" ry="3.5" fill="url(#lavenderGrad)" transform="rotate(-20 45 48)"/>
+  <ellipse cx="55" cy="48" rx="5" ry="3.5" fill="url(#lavenderGrad)" transform="rotate(20 55 48)"/>
+  <circle cx="50" cy="18" r="3" fill="#E2CB96"/>
+</svg>

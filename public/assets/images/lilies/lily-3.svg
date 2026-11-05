@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="100%" height="100%">
+  <defs>
+    <radialGradient id="budGlow" cx="45%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#7153A5" stop-opacity="0.3" />
+      <stop offset="70%" stop-color="#B9A0E8" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#B9A0E8" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="budPetal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#EDE7F7" />
+      <stop offset="100%" stop-color="#A58DCB" />
+    </linearGradient>
+
+    <linearGradient id="budGreen" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#557545" />
+      <stop offset="50%" stop-color="#88A876" />
+      <stop offset="100%" stop-color="#D6E8CD" />
+    </linearGradient>
+
+    <linearGradient id="budGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3BA" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#8E6F12" />
+    </linearGradient>
+  </defs>
+
+  <circle cx="160" cy="160" r="140" fill="url(#budGlow)" />
+
+  <g transform="translate(15, 15)">
+    <!-- Stem & Calyx -->
+    <path d="M40 250 C80 230 110 200 135 165" stroke="url(#budGreen)" stroke-width="5" fill="none" stroke-linecap="round" />
+    
+    <!-- Small Leaf -->
+    <path d="M90 220 C70 190 60 160 70 130 C85 160 100 185 110 205 Z" fill="url(#budGreen)" opacity="0.85" />
+
+    <!-- Calyx sepals -->
+    <path d="M125 175 C132 165 138 150 140 140 C145 152 148 162 145 172 Z" fill="#668B55" />
+
+    <!-- Unfolding Lily Petals -->
+    <!-- Outer Petal Left -->
+    <path d="M135 165 C115 125 110 80 140 40 C148 70 152 110 145 160 Z" fill="url(#budPetal)" opacity="0.9" />
+    
+    <!-- Central Swelling Petal -->
+    <path d="M140 165 C135 115 145 60 175 25 C185 60 180 115 155 165 Z" fill="url(#budPetal)" />
+    
+    <!-- Outer Petal Right -->
+    <path d="M145 165 C165 125 190 85 225 55 C210 90 195 130 160 165 Z" fill="url(#budPetal)" opacity="0.85" />
+
+    <!-- Peeking Gold Anther from the opening tip -->
+    <ellipse cx="178" cy="45" rx="5" ry="2.5" transform="rotate(-15 178 45)" fill="url(#budGold)" filter="drop-shadow(0 0 2px rgba(212,175,55,0.8))" />
+    <ellipse cx="162" cy="38" rx="4.5" ry="2" transform="rotate(20 162 38)" fill="url(#budGold)" filter="drop-shadow(0 0 2px rgba(212,175,55,0.8))" />
+  </g>
+</svg>

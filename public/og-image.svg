@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#1F1A2D" />
+      <stop offset="50%" stop-color="#120D1C" />
+      <stop offset="100%" stop-color="#09070F" />
+    </radialGradient>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5F1FA" />
+      <stop offset="50%" stop-color="#E2CB96" />
+      <stop offset="100%" stop-color="#C6A45C" />
+    </linearGradient>
+    <linearGradient id="lavenderGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D3C2F3" />
+      <stop offset="100%" stop-color="#B69AE8" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGlow)"/>
+
+  <!-- Botanical corner ornaments -->
+  <g opacity="0.35">
+    <circle cx="100" cy="100" r="160" fill="none" stroke="#70449A" stroke-width="1.5" stroke-dasharray="6,6"/>
+    <circle cx="1100" cy="530" r="200" fill="none" stroke="#C6A45C" stroke-width="1.5" stroke-dasharray="8,8"/>
+  </g>
+
+  <!-- Content Box -->
+  <g transform="translate(140, 180)">
+    <rect x="-30" y="-30" width="920" height="320" rx="24" fill="#171521" fill-opacity="0.85" stroke="#B69AE8" stroke-opacity="0.25" stroke-width="1.5"/>
+
+    <text x="0" y="45" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="600" fill="#C6A45C" letter-spacing="4">
+      MIDNIGHT FLORAL LAVENDER PORTFOLIO
+    </text>
+
+    <text x="0" y="125" font-family="'Cormorant Garamond', Georgia, serif" font-size="72" font-weight="700" fill="url(#goldGradient)">
+      Kashish Singh
+    </text>
+
+    <text x="0" y="180" font-family="'Space Grotesk', sans-serif" font-size="26" font-weight="500" fill="url(#lavenderGradient)">
+      BCA Graduate &amp; Aspiring Software Developer
+    </text>
+
+    <text x="0" y="235" font-family="'Space Grotesk', sans-serif" font-size="18" fill="#B5AABD">
+      Python • React • FastAPI • MySQL • Power BI • Practical Software Engineering
+    </text>
+  </g>
+</svg>

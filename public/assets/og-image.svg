@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090F" />
+      <stop offset="50%" stop-color="#11111B" />
+      <stop offset="100%" stop-color="#171521" />
+    </linearGradient>
+    <radialGradient id="purpleGlow" cx="70%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#7153A5" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#B9A0E8" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#09090F" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="goldText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E8D69B" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#AA820A" />
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B9A0E8" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#D4AF37" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#7153A5" stop-opacity="0.6" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)" />
+  <circle cx="850" cy="250" r="450" fill="url(#purpleGlow)" />
+
+  <!-- Frame Border -->
+  <rect x="30" y="30" width="1140" height="570" rx="20" fill="none" stroke="url(#borderGrad)" stroke-width="2" />
+
+  <!-- Monogram Logo KS -->
+  <g transform="translate(100, 100)">
+    <rect width="64" height="64" rx="14" fill="#171521" stroke="#B9A0E8" stroke-width="1.5" />
+    <!-- K -->
+    <path d="M20 18 L20 46 M20 32 L31 18 M23 29 L32 46" stroke="url(#goldText)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- S -->
+    <path d="M44 23 C43 20 40 18 36 18 C32 18 30 20.5 30 23.5 C30 27 34 29 38 31 C42 33 44 36 44 39.5 C44 43.5 40.5 46 36 46 C32 46 29 43.5 28 40" stroke="#B9A0E8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  </g>
+
+  <!-- Tagline -->
+  <text x="185" y="140" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="600" fill="#B9A0E8" letter-spacing="4">MIDNIGHT LAVENDER &bull; BOTANICAL PORTFOLIO</text>
+
+  <!-- Main Headline -->
+  <text x="100" y="270" font-family="'Cormorant Garamond', Georgia, serif" font-size="80" font-weight="bold" fill="#F8F6FA" letter-spacing="2">KASHISH SINGH</text>
+
+  <!-- Role Subtitle -->
+  <text x="100" y="340" font-family="'Plus Jakarta Sans', sans-serif" font-size="32" font-weight="600" fill="url(#goldText)" letter-spacing="1">Aspiring Software Developer | BCA Graduate</text>
+
+  <!-- Description -->
+  <text x="100" y="405" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="400" fill="#AAA5B5">Building practical digital experiences with Python, JavaScript, and intelligent applications.</text>
+  <text x="100" y="440" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="400" fill="#AAA5B5">Featuring Career Sphere, SYRAX, and Job Market Analytics.</text>
+
+  <!-- Botanical lily illustration accent on right -->
+  <g transform="translate(800, 180) scale(0.9)" opacity="0.85">
+    <circle cx="200" cy="200" r="180" fill="url(#purpleGlow)" />
+    <!-- Stylized lily petals -->
+    <path d="M200 195 C185 140 170 80 195 25 C210 20 220 50 215 110 C210 150 205 185 200 195 Z" fill="#E2D9F3" opacity="0.85" />
+    <path d="M195 200 C140 175 75 145 25 160 C25 180 65 205 125 210 C160 212 190 205 195 200 Z" fill="#D5C5ED" opacity="0.8" />
+    <path d="M205 198 C255 170 325 140 375 155 C375 175 335 205 275 212 C240 215 210 205 205 198 Z" fill="#D5C5ED" opacity="0.8" />
+    <path d="M200 205 C180 150 160 85 190 35 C205 30 225 45 220 100 C215 145 210 185 200 205 Z" fill="#FFFFFF" />
+    <path d="M200 205 C155 185 85 165 40 185 C45 205 90 225 150 220 C180 216 195 210 200 205 Z" fill="#FFFFFF" />
+    <path d="M200 205 C245 185 315 165 360 185 C355 205 310 225 250 220 C220 216 205 210 200 205 Z" fill="#FFFFFF" />
+    <!-- Golden stamens -->
+    <circle cx="163" cy="138" r="6" fill="#D4AF37" />
+    <circle cx="237" cy="138" r="6" fill="#D4AF37" />
+    <circle cx="132" cy="189" r="6" fill="#D4AF37" />
+    <circle cx="268" cy="189" r="6" fill="#D4AF37" />
+  </g>
+</svg>

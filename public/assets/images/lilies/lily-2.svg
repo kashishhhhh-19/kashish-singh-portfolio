@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Radial Ambient Lavender Glow -->
+    <radialGradient id="lilySideGlow" cx="60%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7153A5" stop-opacity="0.3" />
+      <stop offset="60%" stop-color="#B9A0E8" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#B9A0E8" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Shading gradients -->
+    <linearGradient id="sidePetalTop" x1="0%" y1="0%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#F2EEFA" />
+      <stop offset="100%" stop-color="#CBBBE6" />
+    </linearGradient>
+
+    <linearGradient id="sidePetalDeep" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EDE6F8" />
+      <stop offset="70%" stop-color="#C0ADE0" />
+      <stop offset="100%" stop-color="#6F509D" stop-opacity="0.7" />
+    </linearGradient>
+
+    <linearGradient id="sideGoldAnther" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5BE" />
+      <stop offset="45%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#80620D" />
+    </linearGradient>
+  </defs>
+
+  <circle cx="230" cy="200" r="170" fill="url(#lilySideGlow)" />
+
+  <g transform="translate(20, 10)">
+    <!-- Stem Base -->
+    <path d="M40 260 C65 245 95 235 130 220" stroke="#7A936C" stroke-width="6" fill="none" stroke-linecap="round" />
+    <path d="M120 225 C130 215 145 210 160 210" stroke="#9BB58D" stroke-width="8" fill="none" stroke-linecap="round" />
+
+    <!-- Back Flaring Petals -->
+    <path d="M160 210 C180 140 220 80 270 50 C265 80 250 130 205 185 Z" fill="url(#sidePetalDeep)" opacity="0.8" />
+    <path d="M160 215 C200 240 260 290 320 320 C290 300 240 260 190 225 Z" fill="url(#sidePetalDeep)" opacity="0.85" />
+
+    <!-- Main Graceful Petals -->
+    <!-- Top Sweeping Petal -->
+    <path d="M160 210 C190 120 250 70 310 40 C300 80 275 140 220 195 Z" fill="url(#sidePetalTop)" />
+    <path d="M160 210 Q240 130 310 40" stroke="#D8C8F3" stroke-width="1.2" fill="none" opacity="0.6" />
+
+    <!-- Center Long Flared Petal -->
+    <path d="M160 210 C220 180 300 170 365 180 C310 205 250 215 185 215 Z" fill="url(#sidePetalTop)" />
+    <path d="M160 210 Q270 190 365 180" stroke="#D8C8F3" stroke-width="1.2" fill="none" opacity="0.6" />
+
+    <!-- Lower Downward Curving Petal -->
+    <path d="M160 215 C210 250 260 300 300 350 C275 320 225 270 175 225 Z" fill="url(#sidePetalTop)" />
+    <path d="M160 215 Q240 280 300 350" stroke="#D8C8F3" stroke-width="1.2" fill="none" opacity="0.6" />
+
+    <!-- Extending Stamens with Gold Anthers -->
+    <path d="M170 210 Q240 190 285 160" stroke="#B8D3A8" stroke-width="2" fill="none" stroke-linecap="round" />
+    <ellipse cx="288" cy="158" rx="7" ry="3.5" transform="rotate(-20 288 158)" fill="url(#sideGoldAnther)" filter="drop-shadow(0 0 2px rgba(212,175,55,0.7))" />
+
+    <path d="M170 212 Q250 205 305 195" stroke="#B8D3A8" stroke-width="2" fill="none" stroke-linecap="round" />
+    <ellipse cx="308" cy="195" rx="7" ry="3.5" transform="rotate(5 308 195)" fill="url(#sideGoldAnther)" filter="drop-shadow(0 0 2px rgba(212,175,55,0.7))" />
+
+    <path d="M170 215 Q245 225 285 240" stroke="#B8D3A8" stroke-width="2" fill="none" stroke-linecap="round" />
+    <ellipse cx="288" cy="242" rx="7" ry="3.5" transform="rotate(25 288 242)" fill="url(#sideGoldAnther)" filter="drop-shadow(0 0 2px rgba(212,175,55,0.7))" />
+  </g>
+</svg>
